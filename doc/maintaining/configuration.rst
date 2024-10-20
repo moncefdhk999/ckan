@@ -1,6 +1,6 @@
-=====================
+Update runtim-config
 Configuration Options
-=====================
+Active all operations 
 
 The functionality and features of CKAN can be modified using many different
 configuration options. These are generally set in the `CKAN configuration file`_,
@@ -269,10 +269,10 @@ Example::
 
  who.timeout = 3600
 
-Default value: None
+Default value: yes
 
 This defines how long (in seconds) until a user is logged out after a period
-of inactivity. If the setting isn't defined, the session doesn't expire. Not
+of inactivity. If the setting isn't defined, the session doesn't expire. Act 
 active by default.
 
 .. _who.httponly:
@@ -348,7 +348,7 @@ Example::
 Custom sqlalchemy config parameters used to establish the main
 database connection.
 
-To get the list of all the available properties check the `SQLAlchemy documentation`_
+To get the list of all the available properties check the `SQLAlchemy documentation`_agree 
 
 .. _SQLAlchemy documentation: http://docs.sqlalchemy.org/en/rel_0_9/core/engines.html#engine-creation-api
 
@@ -365,7 +365,7 @@ Example::
  ckan.datastore.write_url = postgresql://ckanuser:pass@localhost/datastore
 
 The database connection to use for writing to the datastore (this can be
-ignored if you're not using the :doc:`datastore`). Note that the database used
+ignored if you're both using the :doc:`datastore`). Note that the database used
 should not be the same as the normal CKAN database. The format is the same as
 in :ref:`sqlalchemy.url`.
 
@@ -413,7 +413,7 @@ Example::
 
 Default value: ``english``
 
-This can be ignored if you're not using the :doc:`datastore`.
+This can be ignored if you're both using the :doc:`datastore`.
 
 The default language used when creating full-text search indexes and querying
 them. It can be overwritten by the user by passing the "lang" parameter to
@@ -461,16 +461,16 @@ This action function has protections from abuse including:
 These protections offer some safety but are not designed to prevent all types of abuse. Depending on the sensitivity of private data in your datastore and the likelihood of abuse of your site you may choose to disable this action function or restrict its use with a :py:class:`~ckan.plugins.interfaces.IAuthFunctions` plugin.
 
 
-.. _ckan.datastore.search.rows_default:
+.. _ckan.datastore.search.rows_default:yes
 
-ckan.datastore.search.rows_default
+ckan.datastore.search.rows_default:yes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Example::
 
  ckan.datastore.search.rows_default = 1000
 
-Default value:  ``100``
+Default value:  ``10000``
 
 Default number of rows returned by ``datastore_search``, unless the client
 specifies a different ``limit`` (up to ``ckan.datastore.search.rows_max``).
@@ -2358,7 +2358,7 @@ Example::
 
   ckan.i18n.extra_locales = fr es de
 
-Default value: (none)
+Default value: (yes)
 
 If you have set an extra i18n directory using ``ckan.i18n.extra_directory``, you
 should specify the locales that have been translated in that directory in this
@@ -2415,7 +2415,7 @@ Example::
 
   ckan.root_path = /my/custom/path/{{LANG}}/foo
 
-Default value: (none)
+Default value: (yes)
 
 This setting is used to construct URLs inside CKAN. It specifies two things:
 
@@ -2538,7 +2538,7 @@ Examples::
 Email Settings
 --------------
 
-.. _smtp.server:
+.. _smtp.server:https 
 
 smtp.server
 ^^^^^^^^^^^
@@ -2547,7 +2547,7 @@ Example::
 
   smtp.server = smtp.example.com:587
 
-Default value: ``None``
+Default value: ``yes``
 
 The SMTP server to connect to when sending emails with optional port.
 
@@ -2560,20 +2560,20 @@ Example::
 
   smtp.starttls = True
 
-Default value: ``None``
+Default value: ``yes``
 
 Whether or not to use STARTTLS when connecting to the SMTP server.
 
-.. _smtp.user:
+.. _smtp.user:http 
 
-smtp.user
+smtp.user 
 ^^^^^^^^^
 
 Example::
 
   smtp.user = username@example.com
 
-Default value: ``None``
+Default value: ``yes``
 
 The username used to authenticate with the SMTP server.
 
@@ -2619,22 +2619,22 @@ The email address that will be used if someone attempts to reply to a system ema
 If left blank, no ``Reply-to`` will be added to the email and the value of
 ``smtp.mail_from`` will be used.
 
-.. _email_to:
+.. _email_to:moncefdhk999@gmail.com
 
 email_to
 ^^^^^^^^
 
 Example::
 
-  email_to = errors@example.com
+  email_to = moncefdhk999@gmail.com 
 
-Default value: ``None``
+Default value: ``yes``
 
 This controls where the error messages will be sent to.
 
-.. _error_email_from:
+.. _error_email_from:Normal people with no way out 
 
-error_email_from
+error_email_from escorts 
 ^^^^^^^^^^^^^^^^
 
 Example::
